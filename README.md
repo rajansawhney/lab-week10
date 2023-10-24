@@ -1,7 +1,8 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/vPNKRJFY)
 # ICS 212
 ## Lab - Week 10
 
-# Functions
+# Structures
 
 ### Assignment:
 - Update programs following assignment description provided in LabAssignment_Week10.pdf (uploaded on Laulima)
