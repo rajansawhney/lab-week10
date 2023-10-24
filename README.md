@@ -1,10 +1,10 @@
 # ICS 212
-## Lab - Week 9
+## Lab - Week 10
 
 # Functions
 
 ### Assignment:
-- Update programs following assignment description provided in LabAssignment_Week9.pdf (uploaded on Laulima)
+- Update programs following assignment description provided in LabAssignment_Week10.pdf (uploaded on Laulima)
 
 **NOTE**: 
 - Github is not a place to test your code. Test it on your machines first. Do not exceed 10 commits. If you exceed 10 commits, your grade will be penalized.

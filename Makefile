@@ -1,13 +1,13 @@
 CC = gcc
 
-array_w_pointers: array_w_pointers.c
-	gcc array_w_pointers.c -o array_w_pointers -lm
+add_distances: add_distances.c
+	gcc add_distances.c -o add_distances -lm
 
-cyclic_swap: cyclic_swap.c
-	gcc cyclic_swap.c -o cyclic_swap -lm
+student_info: student_info.c
+	gcc student_info.c -o student_info -lm
 
 clean:
-	rm array_w_pointers cyclic_swap
+	rm add_distances student_info
 
-test: array_w_pointers cyclic_swap
+test: add_distances student_info
 	bash test.sh

@@ -3,14 +3,10 @@ echo
 
 echo "*****"
 echo
-echo "Accessing array elements using pointers..."
-output_array_w_pointers=$(./array_w_pointers <test/input_array_w_pointers)
-echo $output_array_w_pointers
-expected_output_array_w_pointers="2
-3
-5
-8
-13"
+echo "Add two distances..."
+output_add_distances=$(./add_distances <test/input_add_distances)
+echo $output_add_distances
+expected_output_add_distances="58\' 1.4\""
 
 if [ $? -eq 0 ] ; then
   echo "Pass: Program exited zero"
@@ -19,23 +15,27 @@ else
   exit 1
 fi
 
-if [[ $output_array_w_pointers == *$expected_output_array_w_pointers* ]] ; then
+if [[ $output_add_distances == *$expected_output_add_distances* ]] ; then
   echo "Pass: Output is correct"
 else
-  echo "Expected '$expected_output_array_w_pointers' but got: $output_array_w_pointers"
+  echo "Expected '$expected_output_add_distances' but got: $output_add_distances"
   exit 1
 fi
 
 echo
 echo "*****"
 echo
-echo "Cyclic swap..."
+echo "Student information..."
 
-output_cyclic_swap=$(./cyclic_swap <test/input_cyclic_swap)
-echo $output_cyclic_swap
-expected_output_cyclic_swap="a=1
-b=2
-c=3"
+output_student_info=$(./student_info <test/input_student_info)
+echo $output_student_info
+expected_output_student_info1="Roll number: 1
+Name: Tom
+Marks: 98.00"
+
+expected_output_student_info5="Roll number: 5
+Name: Spike
+Marks: 40.75"
 
 if [ $? -eq 0 ] ; then
   echo "Pass: Program exited zero"
@@ -44,10 +44,17 @@ else
   exit 1
 fi
 
-if [[ $output_cyclic_swap == *$expected_output_cyclic_swap* ]] ; then
+if [[ $output_student_info == *$expected_output_student_info1* ]] ; then
   echo "Pass: Output is correct"
 else
-  echo "Expected '$expected_output_cyclic_swap' but got: $output_cyclic_swap"
+  echo "Expected '$expected_output_student_info1' but got: $output_student_info"
+  exit 1
+fi
+
+if [[ $output_student_info == *$expected_output_student_info5* ]] ; then
+  echo "Pass: Output is correct"
+else
+  echo "Expected '$expected_output_student_info5' but got: $output_student_info"
   exit 1
 fi
 
